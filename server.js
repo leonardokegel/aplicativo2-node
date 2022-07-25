@@ -5,7 +5,7 @@ const port = process.env.PORT || 3333;
 const app = express();
 
 app.use(morgan('tiny'));
-app.use('/usuarios/v1/', apiRouter)
+app.use('/clientes/v1/', apiRouter)
 app.listen(port, () => {
-    console.info('App rodando na porta 3333');
+    console.info(`App rodando na porta ${port}`);
 });
